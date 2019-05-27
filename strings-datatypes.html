@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <h1 class="pt-3 text-center">Strings Data Types</h1>
+                    <script>
+                        let userName = 'Babasaheb'
+                        console.log('Username lenght: ' + userName.length); // Output: 9
+                        console.log(userName.charAt(4)); // s
+                        console.log(userName[userName.length - 1]) // get last character Output: b 
+                        // Get one by one character
+                        for (let char of userName){
+                            console.log('\n' + char);
+                        }
+
+                        userName[0] = 'C';
+                        console.log(userName.charAt(0)); 
+
+                        // Methods
+                        // Uppercase
+                        console.log(`UPPERCASE: ${userName.toUpperCase()}`); // Output: UPPERCASE: Babasaheb
+                        // Lowercase
+                        console.log(`lowercase: ${userName.toLowerCase()}`); // Output: lowercase: babasaheb
+                        // indexOf(substr, pos)
+                        console.log(`Find substring starting position: ${userName.indexOf('sahe')}`); // Find Substring starting position: 4
+                        console.log(`Find substring starting position: ${userName.indexOf('xyz')}`); // Find Substring starting position: -1
+                        // includes to check the substring is available or not
+                        console.log(userName.includes('ba')); // Output: true
+                        // startsWith to check string start with substring
+                        console.log(userName.startsWith('Baba'));  // Output: true
+                        // endsWith to check string ends with substring
+                        console.log(userName.endsWith('xyz'));  // Output: false
+
+                        // Getting substring with slice()
+                        console.log('Start position: ' + userName.slice(4)); // Start position:: saheb
+                        console.log('Start and end position: ' + userName.slice(4, 5)); // Start and end position: s
+                        // With negative values
+                        console.log('Negative Start and end position: ' + userName.slice(-4, -1));  // Negative Start and end position:ahe
+
+                        // trim()
+                        console.log('   Without trim');
+                        console.log('   Without trim'.trim());
+                        // Repeat string n times
+                        console.log('Repeat string: ' + userName.repeat(3));
+                        // Split string 
+                        let commanStr = 'The quick brown fox jumps over the lazy dog.';
+                        let splitString = commanStr.split(' ');
+                        console.log('Split String in array: ' + splitString);
+                        console.log('Position string: ' + splitString[3]);
+
+                        // replace()
+                        console.log(commanStr.replace('dog', 'monkey'));
+
+                        console.log(commanStr.search('fox'));
+                        // Getting substring with substring()
+                        console.log('Substring with substring(): ' + userName.substring(4, 0))
+                        // Getting substring with substr()
+                        console.log('Substring with substr(): ' + userName.substr(0, 4));
+                        // codePointAt get ASCII code
+                        console.log('Get ASCII code: ' + userName.codePointAt(2));
+                        // fromCodePoint() ASCII from character  
+                        console.log('Get Character from ASCII code: ' + String.fromCodePoint(98));
+
+
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
