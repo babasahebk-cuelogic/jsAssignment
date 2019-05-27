@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <h1 class="pt-3 text-center">Numbers Data Types</h1>
+                    <script>
+                        
+                        let billion = 1000000000;
+                        console.log(billion); // Output: 1000000000 
+                        // Zeroes after 1 
+                        let billionNumber = 1e9;
+                        console.log('Zeroes After 1: ' + billionNumber); // Output: 1000000000 
+
+                        // Zeroes before 1
+                        let ms = 1e-6;
+                        console.log('Zeroes Before 1: ' + ms); // Output: 0.000001
+                        
+                        let roundDownNumber = 123.4592;
+                        console.log('Round Number: ' + Math.floor(roundDownNumber)); // Output: 123
+
+                        let roundUpNumber = 3.1 ;
+                        console.log('Round Ceil: ' + Math.ceil(roundUpNumber)); // Output: 4
+
+                        let roundNumber = 3.4;
+                        console.log('Round Number: ' + Math.ceil(roundNumber)); // Output: 4
+
+                        let roundToFixed = 123.478468;
+                        console.log('Round a number to n digits: ' + roundToFixed.toFixed(2)); // Output: 123.48
+
+                        console.log(isNaN('123')); // Output: false
+                        console.log('Get a integer number for String: ' + parseInt('100.251px')); // Output: 100
+                        console.log('Get a floating number for String: ' + parseFloat('100.251px')); // Output: 100.251
+
+                        // Returns Random Number 
+                        console.log(Math.random()); // return 0 to 1 any random numbers with floating
+                        console.log(Math.randomInteger(1, 10)); // return 0 to 10 random numbers with integer
+
+                        console.log(Math.max(3, 5, -10, 0, 1)); // Output: 5
+                        console.log(Math.min(3, 5, -10, 0, 1)); // Output: 5
+
+                        var visitorOne = +prompt('Please enter first Number?', '');
+                        var visitorTwo = +prompt('Please enter first Number?', '');
+                        console.log('Total Visitors: ' + (visitorOne + visitorTwo));
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

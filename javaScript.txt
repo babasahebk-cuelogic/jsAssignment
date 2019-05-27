@@ -1,0 +1,51 @@
+What is JavaScript: 
+=> JavaScript was initially created to “make web pages alive”.
+=> Scripts are provided and executed as plain text.
+=> initially name is LiveScript.
+=> JavaScript Do: 
+   => Add new HTML to the page, change the existing content, modify styles.
+   => React to user actions, run on mouse clicks, pointer movements, key presses.
+   => Send requests over the network to remote servers, download and upload files (so-called AJAX and COMET technologies).
+   => Get and set cookies, ask questions to the visitor, show messages.
+   => Remember the data on the client-side (“local storage”).
+=> What makes JavaScript unique?
+   => Full integration with HTML/CSS.
+   => Simple things are done simply.
+   => Support by all major browsers and enabled by default.
+=> Same as JavaScript
+    => CoffeeScript,  TypeScript, Dart
+
+Variables: 
+=> Variables are used to store this information.
+=> A variable is a “named storage” for data,  to store goodies, visitors, and other data
+=> use the "let" keyword to create a variable.
+Variable Naming:
+    => The name must contain only letters, digits, or the symbols $ and _.
+    => The first character must not be a digit.
+Constants: 
+=> To declare a constant (unchanging) variable, use const instead of let:
+
+Data types:
+=> Programming languages that allow such things are called “dynamically typed”
+1) Number
+=> let num = 255;
+=> Math.floor: Rounds down: 3.1 becomes 3, and -1.1 becomes -2.
+=> Math.ceil: Rounds up: 3.1 becomes 4, and -1.1 becomes -1.
+=> Math.round: Rounds to the nearest integer: 3.1 becomes 3, 3.6 becomes 4 and -1.1 becomes -1.
+=> toFixed(n): rounds the number to n digits after the point and returns a string 
+=> isFinite and isNaN
+    Infinity (and -Infinity) is a special numeric value that is greater (less) than anything.
+    NaN represents an error.
+=> isNaN(value)
+=> Math.random(1,5);
+=> Math.randomInteger(1,5);
+=> Math.parseInt('123.255px');
+=> Math.parseFloat('123.255px');
+
+String: 
+let str = "Hello";
+let str2 = 'Single quotes are ok too';
+let phrase = `can embed ${str}`;
+
+
+
