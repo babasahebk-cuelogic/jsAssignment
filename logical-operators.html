@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <h1 class="pt-3 text-center">Numbers Data Types</h1>
+                    <script>
+                        let firstNumber = 10;
+                        let secondNumber = 20;
+                        let thirdNumber = 5;
+                        // OR Condition will check first truthy  
+                        if(firstNumber < 5 || secondNumber > 30 || thirdNumber === 9){
+                            console.log('True');
+                        }else{
+                            console.log('False');
+                        }
+                        // All condition was false so return false
+                        // Output: False
+                        if(firstNumber > 5 || secondNumber > 30 || thirdNumber === 9){
+                            console.log('True');
+                        }else{
+                            console.log('False');
+                        }
+                        // First condition is true so it will returns true
+                        // Output: true
+
+                        // AND Condition checks all condition will true  
+                        if(firstNumber < 5 && secondNumber > 10 && thirdNumber === 9){
+                            console.log('True');
+                        }else{
+                            console.log('False');
+                        }
+                        // Output: false
+                        if(firstNumber > 5 && secondNumber > 30 && thirdNumber === 9){
+                            console.log('True');
+                        }else{
+                            console.log('False');
+                        }
+                        // Output: false
+                        
+                        let age = 91;
+                        // Using NOT and AND operators                        
+                        if (!(age >= 14 && age <= 90)){
+                            console.log('Age between 14 to 90');
+                        }else{
+                            console.log('Age is not between 14 to 90');
+                        }
+                        // Output: Age between 14 to 90
+                        
+                        // Using OR operators
+                        if (age < 14 || age > 90){
+                            console.log('Age between 14 to 90');
+                        }else{
+                            console.log('Age is not between 14 to 90');
+                        }
+                        // Output: Age between 14 to 90
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
