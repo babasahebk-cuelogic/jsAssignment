@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <h1 class="pt-3 text-center">Type Conversions</h1>
+                    <script>
+                        let stringValue = String(123);
+                        console.log(typeof stringValue); // Output: string
+                        let numberValue = Number('123');
+                        console.log(typeof numberValue); // Output: number
+                        // When we use "/ * -" it will treat as a number
+                        console.log("6" / "2"); 
+                        // Output: 3
+                        console.log(Number('123abc')); // Output: NaN
+                        console.log(typeof NaN); // Output: number
+                        console.log(10 + '20'); // Output: 1020
+                        // 1=> true, '0'=> true,  ' ' => true, 'any string' => true
+                        // 0, null, undefined, NaN, ''	=> false
+                        console.log(Boolean(1)); // true
+                        // EG. 
+                        console.log("" + 1 + 0); // Output: "10" 
+                        console.log("" - 1 + 0); // Output: -1
+                        console.log(true + false); // Output: 1
+                        console.log(6 / "3"); // Output: 2
+                        console.log("2" * "3"); // Output: 6
+                        console.log(4 + 5 + "px"); // Output: "9px"
+                        console.log("$" + 4 + 5); // Output: "$45"
+                        console.log("4" - 2); // Output: -2
+                        console.log("4px" - 2); // Output: NaN
+                        console.log(7 / 0); // Output: Infinity , con't divided by 0
+                        console.log("  -9  " + 5); // Output:" -9 5"
+                        console.log("  -9  " - 5); // Output: -14
+                        console.log(null + 1); // 1 
+                        console.log(undefined + 1); // Output: NaN
+
+
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
