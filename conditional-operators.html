@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <h1 class="pt-3 text-center">Conditinal Operators</h1>
+                    <script>
+                        let year = prompt('Please enter year eg. 2015', '');
+                        if(year == 2019){
+                            console.log('Current year!');
+                        } else{
+                            console.log('Not a current year');
+                        }
+
+                        if(year == 2019){
+                            console.log('You are in current year!!');
+                        } else if(year < 2019){
+                            console.log('You are in past year!!');
+                        } else{
+                            console.log('You are in future year!!');
+                        }
+
+                        let result = (year == 2019) ? 'Yes' : 'No';
+                        console.log(result);
+                                            
+                        let age = prompt('age?', 18);
+                        let message = (age < 3) ? 'Hi, baby!' :  (age < 18) ? 'Hello!' :  (age < 100) ? 'Greetings!' :  'What an unusual age!';
+                        console.log(message);
+
+                        for (let i = 0; i < 5; i++) alert( i );
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
