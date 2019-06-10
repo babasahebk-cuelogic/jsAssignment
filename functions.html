@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <h1 class="pt-3 text-center">Functions</h1>
+                    <script>
+                        function showMessage(){
+                            console.log(`Welcome, Babasaheb`);
+                        }
+                        showMessage();
+                        // Single Parameters
+                        function showNameMessage(userName){
+                            console.log(`Welcome, ${userName}`);
+                        }
+                        showNameMessage('Sagar');
+                        showNameMessage('Shital');
+                        // Multipal Parameters
+                        function showFullName(userName, lastName){
+                            console.log(`Welcome, ${userName} ${lastName} `);
+                        }
+                        showFullName('Anil', 'Sawant');
+                        showFullName('Rahul');
+                        
+                        // Default Parameters
+                        function showFullName1(userName, lastName = "Patil"){
+                            console.log(`Welcome, ${userName} ${lastName} `);
+                        }
+                        showFullName1('Babasaheb', 'Kokitkar');
+                        showFullName1('Pradip');
+
+
+                        // Function Expression: 
+                        let sayHello = function(){
+                            console.log('Hello');
+                        };        
+                        sayHello(); 
+
+                        // Arrow Function               
+                        let sumNumber = (numberOne, numberTwo) => {
+                            sumTotal = numberOne + numberTwo;
+                            console.log(`Addition : ${sumTotal}`);
+                        };
+                        sumNumber(201, 548);
+
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
