@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <h1 class="pt-3 text-center">Objects</h1>
+                    <pre>
+                            // Object
+                            let user = {
+                                name: "John",
+                                age: 30
+                            }
+                            console.log(user.name);
+                            // Copy reference 
+                            let newUser = user;
+                            console.log(newUser.age);
+                            
+                            // Changed Reference value it will change real object also
+                            newUser.age = 40;
+                            console.log(newUser.age);
+                            console.log(user.age);
+    
+                            // Constant object we can change the value or add the value
+                            const userInfo = {
+                                name: 'Babasaheb'
+                            }
+                            userInfo.age = 25;
+                            console.log(`UserInfo object value:  ${userInfo.name} and age ${userInfo.age}`);
+                            
+                            // Using 'this' keyword
+                            const myInfo1 = {
+                                firstName : 'Babasaheb',
+                                lastName : 'Kokitkar',
+                                age : 30,
+                                myFullName(){
+                                    console.log(`My full name is ${this.firstName} ${this.lastName}`);
+                                }
+                            }
+                            myInfo1.myFullName();
+    
+                            // Without using this keyword getting error
+                            const myInfo = {
+                                firstName : 'Babasaheb',
+                                lastName : 'Kokitkar',
+                                age : 30,
+                                fullName(){
+                                    console.log(`My full name is ${firstName} ${lastName}`);
+                                }
+                            }
+                            myInfo.fullName();
+                    </pre>
+                    <script>
+                        //let firstName = 'Babasaheb';
+                        // Object
+                        let user = {
+                            name: "John",
+                            age: 30
+                        }
+                        console.log(user.name);
+                        // Copy reference 
+                        let newUser = user;
+                        console.log(newUser.age);
+                        
+                        // Changed Reference value it will change real object also
+                        newUser.age = 40;
+                        console.log(newUser.age);
+                        console.log(user.age);
+
+                        // Constant object we can change the value or add the value
+                        const userInfo = {
+                            name: 'Babasaheb'
+                        }
+                        userInfo.age = 25;
+                        console.log(`UserInfo object value:  ${userInfo.name} and age ${userInfo.age}`);
+                        
+                        // Using 'this' keyword
+                        const myInfo1 = {
+                            firstName : 'Babasaheb',
+                            lastName : 'Kokitkar',
+                            age : 30,
+                            myFullName(){
+                                console.log(`My full name is ${this.firstName} ${this.lastName}`);
+                            }
+                        }
+                        myInfo1.myFullName();
+
+                        //Without using this keyword getting error
+                        const myInfo = {
+                            firstName : 'Babasaheb',
+                            lastName : 'Kokitkar',
+                            age : 30,
+                            fullName(){
+                                //console.log(`My full name is ${firstName} ${lastName}`);
+                            }
+                        }
+                        myInfo.fullName();
+
+                        //Using arrow function access local variables
+                        const myInfos = {
+                            firstName : 'Babasaheb',
+                            lastName : 'Kokitkar',
+                            age : 30,
+                            fullName : () =>{
+                                console.log(`My full name is ${myInfos.firstName} ${myInfos.lastName}`);
+                            }
+                        }
+                        myInfos.fullName();
+                        
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
